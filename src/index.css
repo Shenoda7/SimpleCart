@@ -1,0 +1,10 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+body {
+  @apply bg-[#739AFF];
+}
+
+main {
+  @apply absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] bg-white rounded-md shadow-md w-[75%] p-8 text-[18px];
+}

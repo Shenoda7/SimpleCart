@@ -1,0 +1,23 @@
+.cart__box {
+  @apply p-4 shadow-[0_1px_4px_rgba(0,_0,_0,_0.25)] rounded-md flex flex-row items-center w-full gap-[50px];
+}
+
+.cart__operations-count {
+  @apply flex flex-row items-center gap-[18px];
+}
+
+.btn {
+  @apply px-4 w-[80px] py-2 bg-[#739AFF] text-white rounded-md hover:bg-[#6b8aff] focus:outline-none;
+}
+
+.btn-green {
+  @apply px-4 w-[80px] py-2 bg-emerald-500 text-white rounded-md hover:bg-emerald-600 focus:outline-none;
+}
+
+.cart__price {
+  @apply text-lg font-semibold text-[#1E1E1E];
+}
+
+.btn-red {
+  @apply px-4 w-[100px] py-2 bg-red-500 text-white rounded-md hover:bg-red-600 focus:outline-none;
+}
