@@ -93,19 +93,12 @@ function App() {
     setProducts((prevProducts) => {
       const exist = prevProducts.some((product) => product.id === optionObj.id);
       if (exist) {
-        return prevProducts.map((product) =>
-          product.id === optionObj.id
-            ? {
-                ...product,
-                count: product.count + 1,
-                price: product.basePrice * (product.count + 1),
-              }
-            : product,
-        );
+        return prevProducts;
       }
       return [optionObj, ...prevProducts];
     });
   }
+
   const summary = products.reduce((total, product) => total + product.price, 0);
 
   return (
