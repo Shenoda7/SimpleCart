@@ -1,9 +1,9 @@
 .cart__title {
-  @apply text-[#1E1E1E] font-bold text-[16px];
+  @apply font-bold text-[16px];
 }
 
 .cart__paragraph {
-  @apply pb-2 border-b-4 text-[#1E1E1E] font-medium mb-[30px];
+  @apply pb-2 border-b-4  font-medium mb-[30px];
 }
 
 .cart__section {

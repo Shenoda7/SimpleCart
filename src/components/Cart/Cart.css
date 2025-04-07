@@ -15,7 +15,7 @@
 }
 
 .cart__price {
-  @apply text-lg font-semibold text-[#1E1E1E];
+  @apply text-lg font-semibold;
 }
 
 .btn-red {

@@ -9,22 +9,28 @@ function Menu({ onEmpty, onAdd, onReset }) {
       </div>
 
       <div className="flex flex-col mb-5 items-center">
-        <p className="mb-2">Wanna Add Pizza ?</p>
-        <button onClick={() => onAdd("pizza")} className="btn">
+        <p className="mb-2">Wanna Add chipsy ?</p>
+        <button onClick={() => onAdd("chipsy")} className="btn">
           Add
         </button>
       </div>
 
       <div className="flex flex-col mb-5 items-center">
-        <p className="mb-2">Wanna Add a Combo ?</p>
-        <button onClick={() => onAdd("combo")} className="btn">
+        <p className="mb-2">Wanna Add a pepsi ?</p>
+        <button onClick={() => onAdd("pepsi")} className="btn">
           Add
         </button>
       </div>
 
       <div className="flex flex-col mb-5 items-center">
-        <p className="mb-2">Wanna Add Spanish Rice ?</p>
-        <button onClick={() => onAdd("rice")} className="btn">
+        <p className="mb-2">Wanna Add cigarets ?</p>
+        <button onClick={() => onAdd("cigarets")} className="btn">
+          Add
+        </button>
+      </div>
+      <div className="flex flex-col mb-5 items-center">
+        <p className="mb-2">Wanna Add baneh ?</p>
+        <button onClick={() => onAdd("baneh")} className="btn">
           Add
         </button>
       </div>

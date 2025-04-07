@@ -1,6 +1,5 @@
 import "./Cart.css";
 function Cart({
-  img,
   name,
   description,
   count,
@@ -12,7 +11,6 @@ function Cart({
   return (
     <>
       <div className="cart__box">
-        <img src={img} alt="" />
         <div className="cart__text">
           <p className="cart__name">{name}</p>
           <p className="cart__desc">{description}</p>
@@ -23,13 +21,17 @@ function Cart({
             +
           </button>
           <span className="cart__count">{count}</span>
-          <button className="btn" disabled={!count} onClick={handleDecrement}>
+          <button
+            className="btn"
+            disabled={count === 1}
+            onClick={handleDecrement}
+          >
             -
           </button>
         </div>
 
         <div className="cart__price">
-          price: <span className="text-xl">${price}</span>
+          price: <span className="text-xl">${price * count}</span>
         </div>
 
         <button className="btn-red ml-auto" onClick={handleDeletion}>

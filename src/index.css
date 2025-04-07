@@ -1,8 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
 body {
-  @apply bg-[#739AFF];
+  /*@apply bg-[#739AFF];*/
 }
 
 main {
