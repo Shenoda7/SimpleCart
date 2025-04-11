@@ -1,29 +1,25 @@
 import "./Cart.css";
 function Cart({
-  name,
-  description,
-  count,
-  price,
   handleIncrement,
   handleDecrement,
   handleDeletion,
+  ...product
 }) {
   return (
     <>
       <div className="cart__box">
         <div className="cart__text">
-          <p className="cart__name">{name}</p>
-          <p className="cart__desc">{description}</p>
+          <p className="cart__name">{product.name}</p>
         </div>
 
         <div className="cart__operations-count">
           <button className="btn" onClick={handleIncrement}>
             +
           </button>
-          <span className="cart__count">{count}</span>
+          <span className="cart__count">{product.count}</span>
           <button
             className="btn"
-            disabled={count === 1}
+            disabled={product.count === 1}
             onClick={handleDecrement}
           >
             -
@@ -31,7 +27,8 @@ function Cart({
         </div>
 
         <div className="cart__price">
-          price: <span className="text-xl">${price * count}</span>
+          price:{" "}
+          <span className="text-xl">${product.price * product.count}</span>
         </div>
 
         <button className="btn-red ml-auto" onClick={handleDeletion}>
